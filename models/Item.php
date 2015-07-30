@@ -1,4 +1,4 @@
-<?php namespace StamiButzbach\Podcast\Models;
+<?php namespace Stadtmissionbutzbach\Podcast\Models;
 
 use Model;
 
@@ -11,7 +11,7 @@ class Item extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'stamibutzbach_podcast_items';
+    public $table = 'stadtmissionbutzbach_podcast_items';
 
     /**
      * @var array Guarded fields

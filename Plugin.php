@@ -1,5 +1,6 @@
-<?php namespace StamiButzbach\Podcast;
+<?php namespace StadtmissionButzbach\Podcast;
 
+use Backend;
 use System\Classes\PluginBase;
 
 /**
@@ -17,16 +18,22 @@ class Plugin extends PluginBase
     {
         return [
             'name'        => 'Podcast',
-            'description' => 'A Podcast Plugin',
-            'author'      => 'StamiButzbach',
+            'description' => 'No description provided yet...',
+            'author'      => 'StadtmissionButzbach',
             'icon'        => 'icon-leaf'
         ];
     }
 
-    public function registerComponents()
+    public function registerNavigation()
     {
         return [
-            // 'Acme\Blog\Components\Post' => 'blogPost'
+            'podcast' => [
+                'label' => 'Podcast',
+                'url' => Backend::url('stadtmissionbutzbach/podcast/channel'),
+                'icon' => 'icon-headphones',
+                'permissions' => ['podcast.*'],
+                'order' => 100,
+            ]
         ];
     }
 

@@ -1,5 +1,5 @@
 1.0.1: First version of Podcast
 1.0.2:
-  - Add Items table
-  - create_podcasts_table.php
+  - Add Channel and Item table
+  - create_channels_table.php
   - create_items_table.php

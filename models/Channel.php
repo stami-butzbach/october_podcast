@@ -1,17 +1,17 @@
-<?php namespace Stamibutzbach\Podcast\Models;
+<?php namespace Stadtmissionbutzbach\Podcast\Models;
 
 use Model;
 
 /**
- * Podcast Model
+ * Channel Model
  */
-class Podcast extends Model
+class Channel extends Model
 {
 
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'stamibutzbach_podcast_podcasts';
+    public $table = 'stadtmissionbutzbach_podcast_channels';
 
     /**
      * @var array Guarded fields
@@ -33,7 +33,9 @@ class Podcast extends Model
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];
-    public $attachOne = [];
+    public $attachOne = [
+        'image' => ['System\Models\File']
+    ];
     public $attachMany = [];
 
 }

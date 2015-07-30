@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Channel
+
+# Model Form Field configuration
+form: $/stadtmissionbutzbach/podcast/models/channel/fields.yaml
+
+# Model Class name
+modelClass: Stadtmissionbutzbach\Podcast\Models\Channel
+
+# Default redirect location
+defaultRedirect: stadtmissionbutzbach/podcast/channel
+
+# Create page
+create:
+    title: Create Channel
+    redirect: stadtmissionbutzbach/podcast/channel/update/:id
+    redirectClose: stadtmissionbutzbach/podcast/channel
+
+# Update page
+update:
+    title: Edit Channel
+    redirect: stadtmissionbutzbach/podcast/channel
+    redirectClose: stadtmissionbutzbach/podcast/channel
+
+# Preview page
+preview:
+    title: Preview Channel
