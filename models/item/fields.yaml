@@ -3,6 +3,11 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
+  title:
+    label: Titel
+    type: text
+
+  duration:
+    label: Duration
+    type: number
+    comment: Duration in seconds.

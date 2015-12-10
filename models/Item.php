@@ -14,6 +14,41 @@ class Item extends Model
     public $table = 'stadtmissionbutzbach_podcast_items';
 
     /**
+     * @var string Title of this item
+     */
+//    public $title;
+
+    /**
+     * @var string Url of this item
+     */
+//    public $link;
+
+    /**
+     * @var string Description
+     */
+//    public $description;
+
+    /**
+     * @var string Category
+     */
+//    public $category;
+
+    /**
+     * @var int Duration in seconds
+     */
+//    public $duration;
+
+    /**
+     * @var \DateTime Publication date
+     */
+//    public $pub_date;
+
+    /**
+     * @var boolean Published flag
+     */
+//    public $published;
+
+    /**
      * @var array Guarded fields
      */
     protected $guarded = ['*'];
@@ -21,7 +56,15 @@ class Item extends Model
     /**
      * @var array Fillable fields
      */
-    protected $fillable = [];
+    public $fillable = [
+        'title',
+        'link',
+        'description',
+        'category',
+        'duration',
+        'pub_date',
+        'published'
+    ];
 
     /**
      * @var array Relations

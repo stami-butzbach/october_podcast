@@ -18,9 +18,9 @@ class Plugin extends PluginBase
     {
         return [
             'name'        => 'Podcast',
-            'description' => 'No description provided yet...',
+            'description' => 'A Podcast Plugin',
             'author'      => 'StadtmissionButzbach',
-            'icon'        => 'icon-leaf'
+            'icon'        => 'icon-headphones'
         ];
     }
 

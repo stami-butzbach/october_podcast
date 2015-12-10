@@ -5,7 +5,42 @@
 fields:
   title:
     label: Title
-  description:
-    label: Description
-    type: textarea
-    size: large
+
+tabs:
+  fields:
+    description:
+      label: Description
+      type: textarea
+      size: large
+      tab: Settings
+
+    link:
+      label: Link
+      tab: Settings
+
+    language:
+      label: Language
+      tab: Settings
+
+    category:
+      label: Category
+      type: dropdown
+      options:
+        christianity: Christianity
+      default: christianity
+      tab: Settings
+
+    author:
+      label: Author
+      tab: Settings
+
+    explicit:
+      label: Is Explicit?
+      type: checkbox
+      default: false
+      tab: Settings
+
+    items:
+      label: Items
+      tab: Items
+      type: Stadtmissionbutzbach\Podcast\FormWidgets\ChannelItems
